@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML 的表单元素</title>
+</head>
+<body>
+    <!-- 注册 -->
+    <h1>注册</h1>
+    <form action="regist" method="post">
+        <div>用户名：</div>
+        <input type="text" name="username" id="username" value=""/><br/>
+        <div>密码：</div>
+        <input type="password" name="password" id="password" value=""/><br/>
+        <div>确认密码：</div>
+        <input type="password" name="password" id="re_password" value=""/><br/>
+        <div>性别：</div>
+        <input type="radio" name="sex" id="sex_man" value="man" checked="checked"/>男
+        <input type="radio" name="sex" id="sex_woman" value="woman"/>女<br/>
+        <div>兴趣爱好：</div>
+        <input type="checkbox" name="interest" id="ins_football" value="football"/>足球<input type="checkbox" name="interest" id="ins_volleyball" value="volleyball"/>排球<input type="checkbox" name="interest" id="ins_ping-pong" value="ping-pong"/>乒乓球<br/>
+        <div>选择头像：</div>
+        <input type="file" name="file" id="file" value=""/><br/>
+        <input type="image" width="200" height="100" src="img/logo.png"/><br/>
+        <input type="reset" value="重置信息"/>
+        <input type="submit" id="submit" value="注册账号">
+        <input type="hidden" name="regist" id="" value="default">
+    </form>
+    <br />
+
+
+    <!-- 下拉列表 -->
+    <h1>下拉列表</h1>
+    <form action="homeplace" method="post">
+        直辖市：
+        <select name="homeplace">
+            <option value="Beijing">北京</option>
+            <option value="Tianjin" selected="selected">天津</option>
+            <option value="Shanghai">上海</option>
+            <option value="Chongqing">重庆</option>
+        </select>
+        <input type="submit" id="" name="">
+    </form>
+    <br /><br /><br /> <br /><br /><br /><br /><br /><br /> 
+    <br /><br /><br /> <br /><br /><br /><br /><br /><br /> 
+    <!-- 滚动列表 -->
+    <h1>滚动列表</h1>
+    <form action="age" method="post">
+        您在哪些方面使用计算机？
+        <select name="computer" multiple="multiple">
+            <option value="edit">编辑</option>
+            <option value="game">游戏</option>
+            <option value="video">视频</option>
+            <option value="develop">开发</option>
+        </select>
+        <input type="submit" id="" name="">
+    </form>
+    <br />
+    <form action="age" method="post">
+        您大约在什么时候接触计算机的？
+        <select name="homeplace" size="3">
+            <option value="0+">0-10岁</option>
+            <option value="10+">11-20岁</option>
+            <option value="20+">21-30岁</option>
+            <option value="30+">31-40岁</option>
+            <option value="40+">41-50岁</option>
+        </select>
+        <input type="submit" id="" name="">
+    </form>
+
+    <!-- 文本框 -->
+    <h1>留言板</h1>
+    <form action="message" method="post">
+        留言：<br/>
+        <textarea rows="10" cols="50" name="message"></textarea><br/>
+        <input type="submit" id="" name=""/>
+    </form>
+</body>
+</html>
